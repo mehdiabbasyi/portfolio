@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'Courier Prime', 'Courier New', monospace;
+  
+  --wall: #f2f1ed;
+  --frame: #e6e4df;
+  --mat: #f8f7f4;
+  --ink: #1c1b19;
+  --mid: #9a9890;
+  --faint: #dedad4;
+  --paper: #faf9f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-serif);
+  color: var(--ink);
+  background: var(--wall);
+}
+
+body {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  font-family: var(--font-serif);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
